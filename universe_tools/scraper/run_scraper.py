@@ -4,10 +4,11 @@ import argparse
 import sys
 from pathlib import Path
 
+# Initialize system paths using bootstrap
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "11-核心引擎"))
+import path_bootstrap
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
-TOOLS_PATH = REPO_ROOT / "universe-tools"
-if str(TOOLS_PATH) not in sys.path:
-    sys.path.insert(0, str(TOOLS_PATH))
 
 from universe_tools.scraper.gateway import ScraperGateway
 
