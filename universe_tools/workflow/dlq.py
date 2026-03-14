@@ -6,7 +6,7 @@ from pathlib import Path
 from typing import Callable
 from uuid import uuid4
 
-from universe_core.models import utc_now_iso
+from engine.models import utc_now_iso
 
 
 @dataclass(slots=True)

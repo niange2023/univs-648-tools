@@ -10,9 +10,9 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 
 from universe_tools.email.client import Mail163Client
 from universe_tools.email.gateway import EmailGateway
-from universe_core.router.gateway import TaskRouter
-from universe_core.memory.sqlite_store import SQLiteMemoryStore
-from universe_core.memory.vector_store import LocalVectorStore
+from engine.router.gateway import TaskRouter
+from engine.memory.sqlite_store import SQLiteMemoryStore
+from engine.memory.vector_store import LocalVectorStore
 from universe_tools.workflow.heartbeat import HeartbeatRunner
 
 def main() -> None:

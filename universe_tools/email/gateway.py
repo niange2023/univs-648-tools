@@ -3,7 +3,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 from typing import Callable
 
-from universe_core.router.gateway import TaskRouter
+from engine.router.gateway import TaskRouter
 from universe_tools.email.client import Mail163Client
 
 
